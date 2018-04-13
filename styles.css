@@ -1,0 +1,167 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+/* HTML5 display-role reset for older browsers */
+
+/*article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, image {
+  display: block;
+}*/
+
+body {
+  line-height: 1.5;
+}
+
+h1{
+
+  text-align:left;
+ padding:5px;
+  font-family:Arial;
+  font-size: 50px;
+  color: #0e344e;
+  /*background: black;*/
+  /*padding:10px;*/
+}
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Start your base/mobile styles here */
+
+html, body {
+  font-size: 16px;
+  /* Sets default font-size to 16px, ensuring 1em = 16px; */
+}
+
+h2 {
+padding:5px;
+  text-align: justify;
+  font-size:20px;
+  font-family:Arial;
+  font-weight:lighter;
+
+}
+
+ p {
+  padding: 5px;
+  text-align: justify;
+  font-family:Arial;
+}
+
+.title{
+
+  text-align:center;
+  font-family:Arial;
+  font-size: 20px;
+  color:#0e344e;
+  font-weight: bolder;
+}
+
+.image{
+width:100%;
+height:75%;
+align-content: justify;
+
+}
+
+.caption{
+  text-align: justify;
+  font-size: 10px;
+  font-family:Arial;
+  font-color:#4d4d33;
+  padding:none;
+  line-height: none;
+}
+
+
+.results {
+  display: none;
+  padding:none;
+  align-content: justify;
+  text-align:justify;
+}
+
+.results-show {
+  display: block;
+}
+
+.highlight {
+  background-color: #99d6ff;  
+}
+
+/* Tablet/Desktop overrides */
+
+@media(min-width: 681px) {
+
+ h1{ margin-right:20%;
+  margin-left:20%;
+}
+
+h2{
+  margin-right:20%;
+  margin-left:20%;
+}
+p{
+  margin-right:20%;
+  margin-left:20%;
+}
+
+.results{
+   margin-right:20%;
+  margin-left:20%;
+  /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+}
+}
+
+
+@media(min-width: 729px) {
+   h1{ 
+    margin-right:20%;
+  margin-left:20%;
+  font-size:70px;
+  text-align:justify;
+}
+
+h2{
+  margin-right:20%;
+  margin-left:20%;
+  text-align:justify;
+}
+p{
+  margin-right:20%;
+  margin-left:20%;
+  text-align:justify;
+}
+.results{
+   margin-right:20%;
+  margin-left:20%;
+  text-align:justify;
+}
+
+}
+  /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+}
